@@ -36,6 +36,7 @@ import com.epam.ta.reportportal.ws.model.launch.StartLaunchRQ;
 import com.epam.ta.reportportal.ws.model.launch.UpdateLaunchRQ;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockMultipartFile;
@@ -79,6 +80,7 @@ public class LaunchControllerTest extends BaseMvcTest {
 	@Autowired
 	private LaunchController launchController;
 
+	@Before
 	@Test
 	public void happyCreateLaunch() throws Exception {
 		String name = "some launch name";
